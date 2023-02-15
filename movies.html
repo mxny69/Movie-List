@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <style>
+      /* Light mode styles */
+      .light-mode {
+        background: linear-gradient(to right, #FFC0CB, #5E2CA5);
+
+        color: #ffffff;
+      }
+
+
+      head, button {
+  font-family: "Times New Roman", Times, serif;
+}
+
+      /* Dark mode styles */
+      .dark-mode {
+        background: linear-gradient(to right, #ad09ce, #24064e);
+        color: #fff;
+      }
+
+      /* Button styles */
+      button {
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #1e90ff;
+        color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease-in-out;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      button:active {
+        transform: translateY(2px);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <button onclick="toggleDarkMode()">Toggle Dark/White Mode</button>
+    <style>
+  .list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid #333;
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  li {
+    width: 25%;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+  }
+</style>
+
+<style>
+   .list-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     border: 1px solid #333;
+     padding: 10px;
+   }
+ 
+   h1 {
+     text-align: center;
+     margin-bottom: 20px;
+   }
+ 
+   li {
+     width: 33.33%;
+     text-align: center;
+     border-bottom: 1px solid #333;
+     padding: 10px 0;
+   }
+ </style>
+ 
+ <h1>Movie List</h1>
+ <ul class="list-container">
+   <!-- John Wick Movies -->
+   <li >John Wick 1</li>
+   <li>John Wick 2</li>
+   <li>John Wick 3</li>
+   <!-- Batman Movies -->
+   <li>Batman Begins</li>
+   <li>The Dark Knight</li>
+   <li>The Dark Knight Rises</li>
+   <li>Joker</li>
+   <!-- Godzilla and Kong Movies -->
+   <li>Godzilla</li>
+   <li>Kong: Skull Island</li>
+   <li>Godzilla II: King of the Monsters</li>
+   <li>Godzilla vs. Kong</li>
+   <!-- Inception -->
+   <li>Inception</li>
+ </ul>
+ 
+ <h1> Show List</h1>
+ <ul class="list-container">
+   <!-- Shows -->
+   <li>The Boys</li>
+   <li>All of Us Are Dead</li>
+ </ul>
+
+    <script>
+      function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle("light-mode");
+        body.classList.toggle("dark-mode");
+      }
+    </script>
+
+
+
+  </body>
+</html>
